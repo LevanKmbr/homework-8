@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./css/reset.csscr" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Homework8</title>
   </head>
-  <body></body>
+  <body>
+    <section class="signup-page">
+      <div class="signup-form">
+        <div class="form-header">
+          <div>
+            <h3 class="header-title">Premium</h3>
+            <p class="header-descritpion">Faster Instagram Growth</p>
+          </div>
+          <h3 class="header-title">$199/month</h3>
+        </div>
+        <form action="#">
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Cardholder Name" />
+          <div class="card-number">
+            <input type="text" placeholder="Card Number" />
+            <img
+              src="./images/card-icon.svg"
+              width="35"
+              height="25"
+              alt="card"
+              class="card-icon"
+            />
+          </div>
+          <div>
+            <select name="country" class="select-country">
+              <option value="default">Country</option>
+              <option value="georgia">Georgia</option>
+              <option value="usa">USA</option>
+              <option value="france">France</option>
+              <option value="spain">Spain</option>
+              <option value="china">China</option>
+            </select>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox" class="checkbox-wrapper" />
+            <label for="fcheckbox"
+              >I accept the
+              <a href="./index.html" class="highlighted">Terms of Service </a>
+              and
+              <a href="./index.html" class="highlighted">Privacy</a>
+              Policy</label
+            >
+          </div>
+          <button class="submit" type="submit">
+            Get started $199 <span class="ex-price">$249</span>
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
