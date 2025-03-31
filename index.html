@@ -18,9 +18,17 @@
         </div>
         <form action="#">
           <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Cardholder Name" />
+          <input
+            type="text"
+            placeholder="Cardholder Name"
+            class="input-style-1"
+          />
           <div class="card-number">
-            <input type="text" placeholder="Card Number" />
+            <input
+              type="text"
+              placeholder="Card Number"
+              class="input-style-1"
+            />
             <img
               src="./images/card-icon.svg"
               width="35"
@@ -29,7 +37,11 @@
               class="card-icon"
             />
           </div>
-          <div>
+          <div class="crd.info">
+            <input type="text" placeholder="Date" class="select-country" />
+            <input type="text" placeholder="CVV" class="input-style-2" />
+          </div>
+          <div class="address">
             <select name="country" class="select-country">
               <option value="default">Country</option>
               <option value="georgia">Georgia</option>
@@ -38,20 +50,26 @@
               <option value="spain">Spain</option>
               <option value="china">China</option>
             </select>
+            <input type="text" placeholder="Zip" class="input-style-2" />
           </div>
-          <div>
+          <input
+            type="text"
+            placeholder="Discount Code"
+            class="input-style-1"
+          />
+          <div class="chck">
             <input type="checkbox" id="checkbox" class="checkbox-wrapper" />
             <label for="fcheckbox"
               >I accept the
               <a href="./index.html" class="highlighted">Terms of Service </a>
               and
-              <a href="./index.html" class="highlighted">Privacy</a>
-              Policy</label
-            >
+              <a href="./index.html" class="highlighted">Privacy Policy</a>
+            </label>
           </div>
           <button class="submit" type="submit">
-            Get started $199 <span class="ex-price">$249</span>
+            Get started | $199 <span class="ex-price">$249</span>
           </button>
+          <a href="#" class="paywithcoupon">Have a coupon?</a>
         </form>
       </div>
     </section>

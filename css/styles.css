@@ -39,8 +39,7 @@ body {
   opacity: 0.6;
 }
 
-input[type="email"],
-input[type="text"] {
+input[type="email"] {
   width: 424px;
   height: 54px;
   border-radius: 10px;
@@ -48,6 +47,37 @@ input[type="text"] {
   padding-left: 24px;
   outline: none;
   margin-bottom: 27px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+.input-style-1 {
+  width: 424px;
+  height: 54px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding-left: 24px;
+  outline: none;
+  margin-bottom: 27px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  vertical-align: middle;
+}
+.input-style-2 {
+  width: 120px;
+  height: 54px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin-left: 17px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  vertical-align: middle;
 }
 
 .card-number {
@@ -60,14 +90,22 @@ input[type="text"] {
   right: 25px;
 }
 
+.address {
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
 .select-country {
   width: 282px;
   height: 54px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.4);
-  opacity: 0.5;
   outline: none;
   padding-left: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  vertical-align: middle;
 }
 
 .checkbox-wrapper {
@@ -76,7 +114,6 @@ input[type="text"] {
   height: 22px;
   border: 6px;
   border: 1px solid rgba(0, 0, 0, 0.7);
-  margin-top: 27px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,8 +121,16 @@ input[type="text"] {
 }
 
 .checkbox-wrapper:checked::before {
-  content: url("../images/check.svg");
+  content: url("../images/Vector.svg");
   /* background-size: cover; */
+}
+
+.chck {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px auto 29px auto;
+  opacity: 0.4;
 }
 
 .highlighted {
@@ -94,11 +139,14 @@ input[type="text"] {
 }
 
 .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 370px;
   height: 64px;
   border-radius: 32px;
   border: none;
-  margin-top: 27px;
+  margin: 27px auto 27px auto;
   background: linear-gradient(
     to left,
     #c23584 0%,
@@ -106,7 +154,30 @@ input[type="text"] {
     #f77736 84%,
     #fa963e 100%
   );
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: middle;
 }
 .ex-price {
   opacity: 0.6;
+  text-decoration: line-through;
+  margin-left: 5px;
 }
+.paywithcoupon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e1306c;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+/* .cvvnumber {
+  width: 120px;
+  height: 54px;
+  border-radius: 10px;
+  color: #00000066;
+  opacity: 0.4;
+} */
